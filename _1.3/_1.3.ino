@@ -1,7 +1,7 @@
 /********************************************************************************
-**    El projecte 2 consisteix en un muntatge amb 8 LED's.                     **
-**    Fa falta programació i muntatge físic.                                   **
-**    Els LED's s'encen i s'apaguen intercalats.                               **
+**                                                                             **
+**                         1.3 Engegada aturada leds                           **
+**                                                                             **
 ********************************************************************************/
 
 //*******  Includes  ************************************************************
@@ -19,10 +19,10 @@ int ledVermell7 = 11;
 int ledVermell8 = 12;
 
 
-// La funció Setup només s'executa un cop. Quan la placa s'encen o es fa reset.
+// La funció Setup només s'executa una vegada, ja sigui al inici quan conectem el arduino o bé si es fa un reset
 void setup()
 {
-    // Configració del pins de sortida  
+    // configració del pins de sortida  
   pinMode(ledVermell1, OUTPUT); 
   pinMode(ledVermell2, OUTPUT);
   pinMode(ledVermell3, OUTPUT);
@@ -32,37 +32,99 @@ void setup()
   pinMode(ledVermell7, OUTPUT);
   pinMode(ledVermell8, OUTPUT); 
      
-
 }
 
-// La funció Loop es va repetin cada cop.
+// void loop es repeteix constanment 
 void loop() 
 {
 
- 
-    // Actuem sobre els Led's
+    // funcionament sobre els leds següents 
     digitalWrite(ledVermell1, HIGH);
     digitalWrite(ledVermell2, LOW);
-    digitalWrite(ledVermell3, HIGH);
+    digitalWrite(ledVermell3, LOW);
     digitalWrite(ledVermell4, LOW);
-    digitalWrite(ledVermell5, HIGH);
+    digitalWrite(ledVermell5, LOW);
     digitalWrite(ledVermell6, LOW);
-    digitalWrite(ledVermell7, HIGH);      
+    digitalWrite(ledVermell7, LOW);      
     digitalWrite(ledVermell8, LOW);
    
-    delay(1000);
-    
-    // Actuem sobre els LED's
+    delay(500);
+
     digitalWrite(ledVermell1, LOW);
     digitalWrite(ledVermell2, HIGH);
     digitalWrite(ledVermell3, LOW);
+    digitalWrite(ledVermell4, LOW);
+    digitalWrite(ledVermell5, LOW);
+    digitalWrite(ledVermell6, LOW);
+    digitalWrite(ledVermell7, LOW);      
+    digitalWrite(ledVermell8, LOW);
+
+    delay(500);
+
+    digitalWrite(ledVermell1, LOW);
+    digitalWrite(ledVermell2, LOW);
+    digitalWrite(ledVermell3, HIGH);
+    digitalWrite(ledVermell4, LOW);
+    digitalWrite(ledVermell5, LOW);
+    digitalWrite(ledVermell6, LOW);
+    digitalWrite(ledVermell7, LOW);      
+    digitalWrite(ledVermell8, LOW);
+   
+    delay(500);
+    
+    digitalWrite(ledVermell1, LOW);
+    digitalWrite(ledVermell2, LOW);
+    digitalWrite(ledVermell3, LOW);
     digitalWrite(ledVermell4, HIGH);
+    digitalWrite(ledVermell5, LOW);
+    digitalWrite(ledVermell6, LOW);
+    digitalWrite(ledVermell7, LOW);      
+    digitalWrite(ledVermell8, LOW);
+
+    delay(500);
+
+    digitalWrite(ledVermell1, LOW);
+    digitalWrite(ledVermell2, LOW);
+    digitalWrite(ledVermell3, LOW);
+    digitalWrite(ledVermell4, LOW);
+    digitalWrite(ledVermell5, HIGH);
+    digitalWrite(ledVermell6, LOW);
+    digitalWrite(ledVermell7, LOW);      
+    digitalWrite(ledVermell8, LOW);
+
+    delay(500);
+
+    digitalWrite(ledVermell1, LOW);
+    digitalWrite(ledVermell2, LOW);
+    digitalWrite(ledVermell3, LOW);
+    digitalWrite(ledVermell4, LOW);
     digitalWrite(ledVermell5, LOW);
     digitalWrite(ledVermell6, HIGH);
     digitalWrite(ledVermell7, LOW);      
+    digitalWrite(ledVermell8, LOW);
+
+    delay(500);
+
+    digitalWrite(ledVermell1, LOW);
+    digitalWrite(ledVermell2, LOW);
+    digitalWrite(ledVermell3, LOW);
+    digitalWrite(ledVermell4, LOW);
+    digitalWrite(ledVermell5, LOW);
+    digitalWrite(ledVermell6, LOW);
+    digitalWrite(ledVermell7, HIGH);      
+    digitalWrite(ledVermell8, LOW);
+
+    delay(500);
+
+    digitalWrite(ledVermell1, LOW);
+    digitalWrite(ledVermell2, LOW);
+    digitalWrite(ledVermell3, LOW);
+    digitalWrite(ledVermell4, LOW);
+    digitalWrite(ledVermell5, LOW);
+    digitalWrite(ledVermell6, LOW);
+    digitalWrite(ledVermell7, LOW);      
     digitalWrite(ledVermell8, HIGH);
 
-  delay(1000);
+    delay(500); 
   }
- 
 
