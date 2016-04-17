@@ -1,7 +1,7 @@
 /********************************************************************************
-**    El projecte 4 consisteix en un muntatge amb 8 LED's.                     **
-**    Fa falta programació i muntatge físic.                                   **
-**    Els LED's conten en binari fins al nº 15.                                **
+**                                                                             **
+**    1.5 Conta fins a 15 en binari a través de cada polsació                  **
+**                                                                             **
 ********************************************************************************/
 
 //*******  Includes  ************************************************************
@@ -20,7 +20,7 @@ int ledVermell8 = 12;
 int polsador = 2;
 int numero = 0;
 
-// La funció Setup només s'executa un cop. Quan la placa s'encen o es fa reset.
+// La funció Setup només s'executa una vegada, ja sigui al inici quan conectem el arduino o bé si es fa un reset
 void setup()
 {
   // Configració del pins de sortida
@@ -39,7 +39,7 @@ void setup()
 
 }
 
-// La funció Loop es va repetin cada cop.
+// void loop es repeteix constantment
 void loop()
 {
 
@@ -51,7 +51,7 @@ void loop()
       numero = 0;}
     
   }
-  // Nº0
+  // numero 0 en binari 
   else if (numero == 0) {
     digitalWrite(ledVermell1, LOW);
     digitalWrite(ledVermell2, LOW);
@@ -63,7 +63,7 @@ void loop()
     digitalWrite(ledVermell8, LOW);
   }
 
-  // Nº1
+  // numero 1 en binari 
   else if (numero == 1) {
     digitalWrite(ledVermell1, HIGH);
     digitalWrite(ledVermell2, LOW);
@@ -75,7 +75,7 @@ void loop()
     digitalWrite(ledVermell8, LOW);
   }
 
-  // Nº2
+  // numero 2 en binari 
   else if (numero == 2) {
     digitalWrite(ledVermell1, LOW);
     digitalWrite(ledVermell2, HIGH);
@@ -88,7 +88,7 @@ void loop()
 
   }
 
-  // Nº3
+  // numero 3 en binari 
   else if (numero == 3) {
     digitalWrite(ledVermell1, HIGH);
     digitalWrite(ledVermell2, HIGH);
@@ -101,7 +101,7 @@ void loop()
 
   }
 
-  // Nº4
+  // numero 4 en binari 
   else if (numero == 4) {
     digitalWrite(ledVermell1, LOW);
     digitalWrite(ledVermell2, LOW);
@@ -114,7 +114,7 @@ void loop()
 
   }
 
-  // Nº5
+  // numero 5 en binari 
   else if (numero == 5) {
     digitalWrite(ledVermell1, HIGH);
     digitalWrite(ledVermell2, LOW);
@@ -127,7 +127,7 @@ void loop()
 
   }
 
-  // Nº6
+  // numero 6 en binari 
   else if (numero == 6) {
     digitalWrite(ledVermell1, LOW);
     digitalWrite(ledVermell2, HIGH);
@@ -140,7 +140,7 @@ void loop()
 
   }
 
-  // Nº7
+  // numero 7 en binari 
   else if (numero == 7) {
     digitalWrite(ledVermell1, HIGH);
     digitalWrite(ledVermell2, HIGH);
@@ -153,7 +153,7 @@ void loop()
 
   }
 
-  // Nº8
+  // numero 8 en binari 
   else if (numero == 8) {
     digitalWrite(ledVermell1, LOW);
     digitalWrite(ledVermell2, LOW);
@@ -166,7 +166,7 @@ void loop()
 
   }
 
-  // Nº9
+  // numero 9 en binari 
   else if (numero == 9) {
     digitalWrite(ledVermell1, HIGH);
     digitalWrite(ledVermell2, LOW);
@@ -179,7 +179,7 @@ void loop()
 
   }
 
-  // Nº10
+  // numero 10 en binari 
   else if (numero == 10) {
     digitalWrite(ledVermell1, LOW);
     digitalWrite(ledVermell2, HIGH);
@@ -192,7 +192,7 @@ void loop()
 
   }
 
-  // Nº11
+  //numero 11 en binari 
   else if (numero == 11) {
     digitalWrite(ledVermell1, HIGH);
     digitalWrite(ledVermell2, HIGH);
@@ -205,7 +205,7 @@ void loop()
 
   }
 
-  // Nº12
+  // numero 12 en binari 
   else if (numero == 12) {
     digitalWrite(ledVermell1, LOW);
     digitalWrite(ledVermell2, LOW);
@@ -218,7 +218,7 @@ void loop()
 
   }
 
-  // Nº13
+  // numero 13 en binari 
   else if (numero == 13) {
     digitalWrite(ledVermell1, HIGH);
     digitalWrite(ledVermell2, LOW);
@@ -231,7 +231,7 @@ void loop()
 
   }
 
-  // Nº14
+  // numero 14 en binari
   else if (numero == 14) {
     digitalWrite(ledVermell1, LOW);
     digitalWrite(ledVermell2, HIGH);
@@ -244,7 +244,7 @@ void loop()
 
   }
 
-  // Nº15
+  // numero 15 en binari
   else if (numero == 15) {
     digitalWrite(ledVermell1, HIGH);
     digitalWrite(ledVermell2, HIGH);
