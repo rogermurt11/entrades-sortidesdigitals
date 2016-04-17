@@ -1,7 +1,7 @@
 /********************************************************************************
-**    El projecte 4 consisteix en un muntatge amb 8 LED's.                     **
-**    Fa falta programació i muntatge físic.                                   **
-**    Els LED's conten en binari fins al nº 15.                                **
+**                                                                             **
+**             1.4 conta en binari amb els leds engegats                       **
+**                                                                             **
 ********************************************************************************/
 
 //*******  Includes  ************************************************************
