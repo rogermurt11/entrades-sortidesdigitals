@@ -11,11 +11,11 @@
 
 
 int ledVermell3 = 7;
-int ledVermell4 = 8;
-int ledVermell5 = 9;
+int ledTronja4 = 8;
+int ledVerd5 = 9;
 int ledVermell6 = 10;
-int ledVermell7 = 11;
-int ledVermell8 = 12;
+int ledTronja7 = 11;
+int ledVerd8 = 12;
 
 // La funció Setup només s'executa un cop. Quan la placa s'encen o es fa reset.
 void setup()
@@ -23,11 +23,11 @@ void setup()
   // Configració del pins de sortida
 
   pinMode(ledVermell3, OUTPUT);
-  pinMode(ledVermell4, OUTPUT);
-  pinMode(ledVermell5, OUTPUT);
+  pinMode(ledTronja4, OUTPUT);
+  pinMode(ledVerd5, OUTPUT);
   pinMode(ledVermell6, OUTPUT);
-  pinMode(ledVermell7, OUTPUT);
-  pinMode(ledVermell8, OUTPUT);
+  pinMode(ledTronja7, OUTPUT);
+  pinMode(ledVerd8, OUTPUT);
 
   Serial.begin(9600);
 
@@ -40,29 +40,49 @@ void loop()
 
  {
     digitalWrite(ledVermell3, HIGH);
-    delay(21000);
-    digitalWrite(ledVermell3, LOW);  
-    digitalWrite(ledVermell5, HIGH);
-    delay(12000);
-    digitalWrite(ledVermell5, LOW);  
-    digitalWrite(ledVermell4, HIGH);
+    digitalWrite(ledVermell6, HIGH);
     delay(3000);
-    digitalWrite(ledVermell4, LOW);
+    
+    digitalWrite(ledVermell6, LOW);
+    digitalWrite(ledVermell3, HIGH);
+    digitalWrite(ledVerd8, HIGH);
+    delay(6000);
 
-    
-   // seqüència semàfor B
-    if (ledVermell3=HIGH) 
+  
+    digitalWrite(ledVerd8, LOW);
+    digitalWrite(ledTronja7, HIGH);
+    digitalWrite(ledVermell3, HIGH);
+    delay(3000);
+
+    digitalWrite(ledTronja7, LOW);
+    digitalWrite(ledVermell6, HIGH);
+    digitalWrite(ledVermell3,HIGH);
+    delay(3000);
+
+    digitalWrite(ledVermell3, LOW);
+    digitalWrite(ledVerd5, HIGH);
+    digitalWrite(ledVermell6, HIGH);
+    delay(6000); 
+
+    digitalWrite(ledVerd5, LOW);
+    digitalWrite(ledTronja4, HIGH);
     digitalWrite(ledVermell6, HIGH);
     delay(3000);
-    digitalWrite(ledVermell6, LOW);  
-    digitalWrite(ledVermell8, HIGH);
-    delay(12000);
-    digitalWrite(ledVermell8, LOW);  
-    digitalWrite(ledVermell7, HIGH);
-    delay(3000);
-    digitalWrite(ledVermell7, LOW);
+
+    digitalWrite(ledTronja4, LOW);
+    digitalWrite(ledVermell3, HIGH);
     digitalWrite(ledVermell6, HIGH);
-    delay(21000);
+    delay(3000);
     
-       
+    digitalWrite(ledVermell3, LOW);
+    digitalWrite(ledVermell6, LOW);
+    
+
+
+
+
+
+
+   
+     
 }    
